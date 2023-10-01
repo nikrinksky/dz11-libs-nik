@@ -4,7 +4,7 @@ package pro.sky.dz11libsnik.controller;
 import pro.sky.dz11libsnik.entity.Employee;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.HttpStatusCodeException;
-import pro.sky.dz11libsnik.service.DepartmentService;
+import pro.sky.dz11libsnik.service.DepartmentServiceImpl;
 
 import java.util.List;
 import java.util.Map;
@@ -18,9 +18,9 @@ public class DepartmentController {
         return "Code: " + e.getStatusCode() + ". Error: " + e.getMessage();
     }
 
-    private final DepartmentService departmentService;
+    private final DepartmentServiceImpl departmentService;
 
-    public DepartmentController(DepartmentService departmentService) {
+    public DepartmentController(DepartmentServiceImpl departmentService) {
         this.departmentService = departmentService;
     }
 

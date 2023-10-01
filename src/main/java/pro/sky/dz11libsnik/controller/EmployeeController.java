@@ -3,7 +3,7 @@ package pro.sky.dz11libsnik.controller;
 import pro.sky.dz11libsnik.entity.Employee;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.HttpStatusCodeException;
-import pro.sky.dz11libsnik.service.EmployeeService;
+import pro.sky.dz11libsnik.service.EmployeeServiceImpl;
 
 import java.util.List;
 
@@ -16,9 +16,9 @@ public class EmployeeController {
         return "Code: " + e.getStatusCode() + ". Error: " + e.getMessage();
     }
 
-    private final EmployeeService employeeService;
+    private final EmployeeServiceImpl employeeService;
 
-    public EmployeeController(EmployeeService employeeService) {
+    public EmployeeController(EmployeeServiceImpl employeeService) {
         this.employeeService = employeeService;
     }
 

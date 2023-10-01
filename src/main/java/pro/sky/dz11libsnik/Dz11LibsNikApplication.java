@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Dz11LibsNikApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Dz11LibsNikApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Dz11LibsNikApplication.class, args);
+    }
 
 }
